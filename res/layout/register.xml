@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+  
+  <EditText
+      android:id="@+id/mobilePhone2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="@string/mobilePhone" 
+      android:inputType="phone" 
+      android:layout_marginTop="15pt"/>
+  <LinearLayout 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+  <EditText 
+      android:id="@+id/vertifyNum"
+      android:layout_width="0pt"
+      android:layout_height="wrap_content"
+      android:layout_weight="2"
+      android:hint="@string/verify"
+      android:inputType="number"
+      />  
+   <Button
+       android:id="@+id/get"
+       android:layout_width="0pt"
+       android:layout_height="wrap_content"
+       android:layout_weight="1"
+       android:text="@string/get"
+       android:onClick="get"
+       android:clickable="false"
+       android:background="#8080ff"/>
+  </LinearLayout>
+  <EditText
+      android:id="@+id/password2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="@string/password"
+      android:inputType="textPassword"/>
+
+  <Button 
+        android:id="@+id/registerBt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:layout_marginTop="10pt"
+        android:layout_marginLeft="5pt"
+        android:layout_marginRight="5pt"
+        android:onClick="register"
+        android:clickable="false"
+        android:background="#8080ff"/>  
+
+</LinearLayout>
